@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+.text-banner-ayudar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); 
+    z-index: 2; 
+}
+
+.form-container {
+    border-radius: 5px;
+    background-color: white; /* Color de fondo lila claro */
+    padding: 20px;
+    width: 700px; /* Ancho fijo */
+    margin: auto; /* Centrar el formulario */
+    box-shadow: 0 0 10px #999999; /* Sombra lila */
+    margin-bottom: 50px;
+    font-family: 'Dancing Script', cursive;
+    .subtitulo{
+        text-align: center;
+        margin:auto;
+        color: #ffc107;
+        font-family: 'Dancing Script', cursive;
+    }
+}
+
+form {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #9999; /* Borde del mismo color lila */
+    border-radius: 8px; /* Bordes más redondeados */
+    margin-top: 6px; /* Espacio adicional entre campos */
+    font-size: 16px; /* Tamaño de fuente más grande */
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000000; /* Color lila */
+}
+
+
+button {
+    font-size: 35px;
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+input:focus,
+textarea:focus {
+    color: #8e44ad; /* Cambia al color lila cuando tiene foco */
+}
+
+
+/* Estilos para el texto en el banner cuando se ve en dispositivos más pequeños */
+@media screen and (max-width: 800px) {
+
+    .contenedor-banner-ayudar {
+        margin: 0; /* Elimina márgenes en dispositivos más pequeños */
+    }
+
+    .text-banner-ayudar {
+        font-size: 18px;
+    }
+
+    .form-container{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+
+

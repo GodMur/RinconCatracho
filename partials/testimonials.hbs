@@ -1,0 +1,21 @@
+
+<section class="title-Menu">
+    <H2>Menu</H2>
+</section>
+<section class="testimonials">
+    <section class="testimonials-container">
+        {{#each testimonials}}
+        <div class="testimonial">
+                <div class="imagen">          
+                    <img src="{{imgUrl}}" alt={{name}}>
+                    <div class="overlay">
+                        <h2><a href="https://web.whatsapp.com/send/?phone=31759776&text&type=phone_number&app_absent=1" target="_blank">Hacer Click aqui para Ordenar</a></h2>
+                    </div>
+                </div>
+            <h3>{{name}}</h3>
+            <p>{{content}}</p>
+
+        </div>
+        {{/each}}
+    </section>
+</section>

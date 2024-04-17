@@ -1,0 +1,67 @@
+
+.title-Galeria {
+    //display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: 'Dancing Script', cursive;
+
+    h2 {
+        display: flex;
+        
+        color: #ffc107;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+}
+
+.Galeria-container {
+overflow: hidden;
+width: 100vw;
+
+    .galeria {
+        display: flex;
+        //overflow: hidden; /* Oculta las imágenes que se salen del contenedor */
+        animation: mover 30s linear infinite;
+        width: 800%; //''''''
+        /* Animación para mover las imágenes */
+    }
+
+    .galeria img {
+        
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #fff;
+        border: 1px solid #ffc107;
+        margin: 1rem;
+        width: auto;//''''
+        max-width: 100%;
+        height: auto;
+        margin-right: 1rem;
+        /* Espacio entre las imágenes */
+        padding: 1rem;
+    }
+
+    .galeria img:hover {
+       
+     transform: scale(1.2);
+        /* Escala la imagen al pasar el cursor sobre ella */
+    }
+
+    
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-15%);
+        /* Mueve las imágenes hacia la izquierda */
+    }
+
+   
+}

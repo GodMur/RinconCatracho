@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@primary-background-color:#ffffff;
+@primary-text-color:#000000;
+
+@secundary-background-color:#000;
+@secundary-text-color:#fff;
+
+@sizes {
+    tablet: 720px;
+    desktop: 1025px;
+    }
+@import url(PreguntasFrecuentes.less);
+@import url(header.less);
+@import url(hero.less);
+@import url(testimonials.less);
+@import url(Gallery.less);
+@import url(footer.less);
+@import url(bootstrap.min.less);
+@import url(FeaturettesContainer.less);
+@import url(carousel.less);
+@import url(Contactanos.less);
+@import url(Sugerencias.less);
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color:@primary-background-color;
+    color:@primary-text-color;
+    font-family: 'Roboto', sans-serif;
+}
+
+.featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    color: #000000;
+    .hr{
+        border:0;
+        border-top: #000000;
+    }
+  }
+
+.Encabezado {
+margin: 20px;
+text-align: center;
+
+.text-body{
+    box-shadow: 0px 1px 0px  #ffc107;
+}
+.lead{
+    text-align:left;
+}
+
+}
+
